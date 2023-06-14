@@ -27,13 +27,13 @@ Sigue estos pasos para ejecutar el proyecto:
     scrapy crawl <nombre-del-spider>
     ```
 
-    Para listar los Spider creados debes ejecutar el siguiente comando:
+    Lista completa de los Spider creados.
 
     ```
     scrapy list
     ```
 
-    Reemplaza `<nombre-del-spider>` con el nombre del spider que deseas ejecutar. Por ejemplo, si tienes un spider llamado `retail_spider`, el comando sería:
+    Reemplaza `<nombre-del-spider>` con el nombre del spider que deseas ejecutar. 
 
     ```
     scrapy crawl retail_spider
