@@ -1,4 +1,4 @@
-# Proyecto de Scrapping de Datos de Empresas Retail
+# Proyecto de Scrapping Empresas Retail
 
 Este proyecto tiene como objetivo realizar la extracción de datos de empresas retail utilizando la biblioteca Scrapy en Python. Permite obtener información relevante de diferentes sitios web de empresas del sector retail, como nombres de productos, precios, descripciones, etc.
 
