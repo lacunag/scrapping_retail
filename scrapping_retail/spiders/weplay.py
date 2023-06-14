@@ -15,9 +15,8 @@ class WeplaySpider(scrapy.Spider):
 
     def parse(self, response):
         # Aquí se realiza el procesamiento y extracción de los datos de la página
-        # Puedes utilizar selectores CSS o XPath para seleccionar y extraer los elementos
 
-        # Ejemplo de extracción de elementos:
+        # Extracción de elementos:
         for item in response.css('.product-item-details'):
             title = item.css('.product-item-link::text').get().strip()
             link = item.css('::attr(href)').get()
@@ -32,3 +31,6 @@ class WeplaySpider(scrapy.Spider):
             params['special_price'] = special_price
 
             yield params
+
+        for next_page in response.css('a.next'):
+            yield response.follow(next_page, self.parse)
