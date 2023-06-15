@@ -1,0 +1,19 @@
+# Archivos y directorios generados por Scrapy
+__pycache__/
+.scrapy/
+.scrapy.cfg
+
+# Archivos de registro
+*.log
+
+# Entornos virtuales (opcional, si usas uno)
+venv/
+env/
+
+# Archivos y directorios específicos del IDE (opcional, si usas uno)
+.idea/
+.vscode/
+
+# Otros archivos generados por el sistema operativo
+.DS_Store
+Thumbs.db
