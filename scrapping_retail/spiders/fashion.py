@@ -41,3 +41,6 @@ class FashionSpider(scrapy.Spider):
             params['price'] = price
 
             yield params
+        
+        for next_page in response.css('a.next'):
+            yield response.follow(next_page, self.parse)
